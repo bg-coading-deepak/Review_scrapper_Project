@@ -96,7 +96,7 @@ def index():
                 for i in range(len(reviews)):
                     writer.writerow(reviews[i])
    
-            client = pymongo.MongoClient("mongodb+srv://dprajapati9039:deepak@cluster1.x8c5jdd.mongodb.net/?retryWrites=true&w=majority")
+            client = pymongo.MongoClient("mongodb+srv://dprajapati9039:deepak@cluster0.dqlqgmv.mongodb.net/?retryWrites=true&w=majority")
             db = client['shubham']
             review_col = db['review_scrap_data']
             review_col.insert_many(reviews)
